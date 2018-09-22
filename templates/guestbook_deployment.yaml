@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook-deployment
+  labels:
+    app: guestbook
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: guestbook
+  template:
+    metadata:
+      labels:
+        app: guestbook
+    spec:
+      containers:
+      - name: guestbook
+        image: registry.gitlab.com/fufuhu/hands_on_sample/guestbook:latest
+        ports: 
+          - containerPort: 8000
+        command: 
+          - /bin/sh
+          - -c
+          - |
+            python manage.py migrate
+            python manage.py runserver 0.0.0.0:8000
