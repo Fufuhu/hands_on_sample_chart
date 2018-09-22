@@ -3,8 +3,7 @@ name: Guestbook
 home: https://github.com/Fufuhu/hands_on_sample_chart
 version: 1.0.0
 appVersion: 1.0.0
-description: 
-  サンプルのチャート
+description: サンプルのチャート
 keywords:
 - sample
 sources:
