@@ -1,7 +1,8 @@
-name: Guestbook
-version: 1.0.0
-appVersion: 1.0.0
-description: Sample chart.
+name: guestbook
+version: 0.3.7
+appVersion: 5.7.14
+description: Fast, reliable, scalable, and easy to use open-source relational database
+  system.
 keywords:
 - mysql
 - database
@@ -9,6 +10,9 @@ keywords:
 home: https://github.com/Fufuhu/hands_on_sample_chart
 icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
 sources:
-- https://github.com/Fufuhu/hands_on_sample_chart
+- https://github.com/kubernetes/charts
+- https://github.com/docker-library/mysql
 maintainers:
-- name: Ryoma Fujiwara
+- name: Vic Iglesias
+  email: viglesias@google.com
+engine: gotpl
