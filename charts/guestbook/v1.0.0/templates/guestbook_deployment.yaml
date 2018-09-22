@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: registry.gitlab.com/fufuhu/hands_on_sample/guestbook:latest
+        image: "{{ .Values.image:.Values.tag }}" 
         ports: 
           - containerPort: 8000
         command: 
