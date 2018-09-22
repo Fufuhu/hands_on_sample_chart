@@ -1,9 +1,11 @@
 name: Guestbook
 version: 1.0.0
 appVersion: 1.0.0
-description: サンプルのチャート
+description: Sample chart.
 keywords:
-- sample
+- mysql
+- database
+- sql
 home: https://github.com/Fufuhu/hands_on_sample_chart
 icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
 sources:
