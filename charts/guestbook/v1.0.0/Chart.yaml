@@ -5,6 +5,7 @@ description: サンプルのチャート
 keywords:
 - sample
 home: https://github.com/Fufuhu/hands_on_sample_chart
+icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
 sources:
 - https://github.com/Fufuhu/hands_on_sample_chart
 maintainers:
