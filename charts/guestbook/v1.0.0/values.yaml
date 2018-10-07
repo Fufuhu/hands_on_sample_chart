@@ -1,2 +1,8 @@
 image: registry.gitlab.com/fufuhu/hands_on_sample/guestbook
 tag: latest
+
+
+mysql:
+  fullnameOverride: mysql
+  persistence:
+    storageClass: "longhorn"
