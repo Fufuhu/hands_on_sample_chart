@@ -23,5 +23,15 @@ spec:
           - /bin/sh
           - -c
           - |
-            python manage.py migrate
-            python manage.py runserver 0.0.0.0:8000
+            python manage.py migrate --settings sampleapp.settings_prod
+            python manage.py runserver 0.0.0.0:8000 --settings sampleapp.settings_prod
+      initContainers:
+      - name: mysql-waiter
+        image: "mysql:5.7.14"
+        command:
+          - /bin/bash
+          - -c
+          - |
+            # mysqladmin ping -u $username -p$password --host $host -c 10 --sleep 10
+            # mysqladmin ping -u guestbook -pguestbook_pass --host mysql -w10 --sleep 10
+            mysqladmin ping -u guestbook -pguestbook_pass --host mysql -w10 
