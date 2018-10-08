@@ -1,18 +1,15 @@
 name: guestbook
 version: 1.0.0
-appVersion: 5.7.14
-description: Fast, reliable, scalable, and easy to use open-source relational database
-  system.
+appVersion: 1.0.0
+description: Guestbookサンプルアプリケーション
 keywords:
-- mysql
-- database
-- sql
+- django
 home: https://github.com/Fufuhu/hands_on_sample_chart
-icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+icon: https://github.com/Fufuhu/hands_on_sample_chart/blob/master/charts/guestbook/book_open_yoko.png?raw=true 
 sources:
 - https://github.com/kubernetes/charts
 - https://github.com/docker-library/mysql
 maintainers:
-- name: Vic Iglesias
-  email: viglesias@google.com
+- name: Ryoma Fujiwara
+  email: dummy@web.ryoma0923.work
 engine: gotpl
