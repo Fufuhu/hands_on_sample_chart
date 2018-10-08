@@ -19,6 +19,16 @@ spec:
         image: "{{ .Values.image }}:{{ .Values.tag }}" 
         ports: 
           - containerPort: 8000
+        envFrom:
+          - configMapRef:
+              name: guestbook-config
+        env:
+          - name: GUESTBOOK_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: guestbook-secret
+                key: GUESTBOOK_PASSWORD
+
         command: 
           - /bin/sh
           - -c
