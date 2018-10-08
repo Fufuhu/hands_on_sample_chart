@@ -7,8 +7,7 @@ keywords:
 home: https://github.com/Fufuhu/hands_on_sample_chart
 icon: https://github.com/Fufuhu/hands_on_sample_chart/blob/master/charts/guestbook/book_open_yoko.png?raw=true 
 sources:
-- https://github.com/kubernetes/charts
-- https://github.com/docker-library/mysql
+- https://github.com/Fufuhu/hands_on_sample_chart.git
 maintainers:
 - name: Ryoma Fujiwara
   email: dummy@web.ryoma0923.work
