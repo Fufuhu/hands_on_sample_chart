@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: guestbook-config
+data:
+  GUESTBOOK_DATABASE_HOST: {{ .Values.mysql.fullnameOverride | quote }}
+  GUESTBOOK_PORT: "3306"
+  GUESTBOOK_DATABASE: {{ .Values.mysql.mysqlDatabase | quote }}
+  GUESTBOOK_USER: {{ .Values.mysql.mysqlUser | quote }}
