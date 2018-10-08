@@ -4,5 +4,9 @@ tag: latest
 
 mysql:
   fullnameOverride: mysql
+  mysqlUser: guestbook
+  mysqlPassword: guestbook_pass
+  mysqlRootPassword: guestbook_pass
+  mysqlDatabase: guestbook
   persistence:
     storageClass: "longhorn"
